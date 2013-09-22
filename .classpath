@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="search"/>
+	<classpathentry kind="src" path="linkedlist"/>
+	<classpathentry kind="src" path="sort"/>
+	<classpathentry kind="src" path="thread"/>
+	<classpathentry kind="src" path="utilities"/>
+	<classpathentry kind="src" path="graph"/>
+	<classpathentry kind="src" path="queue"/>
+	<classpathentry kind="src" path="stack"/>
+	<classpathentry kind="src" path="string"/>
+	<classpathentry kind="src" path="tree"/>
+	<classpathentry kind="src" path="math"/>
+	<classpathentry kind="src" path="hash"/>
+	<classpathentry kind="src" path="arrays"/>
+	<classpathentry kind="src" path="dp"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre7"/>
+	<classpathentry kind="lib" path="C:/root/software/Java/jars/junit-4.10.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
