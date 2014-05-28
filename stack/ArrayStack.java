@@ -1,15 +1,19 @@
-public class ArrayStack {
-	static int limit;
-	static int stackTop;
-	static int[] list;
+// LIFO implementation
 
+public class ArrayStack<T> {
+	 Object t;
+	 int limit;
+	 int stackTop;
+	 T[] list;
+	
+	@SuppressWarnings("unchecked")
 	public ArrayStack(int size) {
 		limit = size - 1;
-		list = new int[size];
+		list = (T[]) new Object[size];
 		stackTop = -1;
 	}
 
-	public static void push(int data) {
+	public  void push(T data) {
 		if (stackTop == limit)
 			System.out.println("Stack full ");
 		else {
@@ -19,7 +23,7 @@ public class ArrayStack {
 		}
 	}
 
-	public static void pop() {
+	public  void pop() {
 		if (stackTop < 0)
 			System.out.println("Stack empty ");
 		else {
@@ -28,7 +32,7 @@ public class ArrayStack {
 		}
 	}
 
-	public static void retrieve() {
+	public  void retrieve() {
 		if (stackTop < 0)
 			System.out.println("Stack empty ");
 		else
