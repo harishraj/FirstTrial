@@ -12,21 +12,12 @@ public abstract class AStar<T> {
 		public Double g;
 		public Path parent;
 
-		/**
-		 * Default c'tor.
-		 */
 		public Path() {
 			parent = null;
 			point = null;
 			g = f = 0.0;
 		}
 
-		/**
-		 * C'tor by copy another object.
-		 * 
-		 * @param p
-		 *            The path object to clone.
-		 */
 		public Path(Path p) {
 			this();
 			parent = p;

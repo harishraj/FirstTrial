@@ -13,7 +13,7 @@ class ArrayShuffle {
 		System.out.println("");
 	}
 
-	// Implementing Fisher–Yates shuffle
+	// Implementing Fisher Yates shuffle
 	static void shuffleArray(int[] ar) {
 		Random rnd = new Random();
 		for (int i = ar.length - 1; i >= 0; i--) {
