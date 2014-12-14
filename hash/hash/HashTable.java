@@ -5,7 +5,7 @@ public class HashTable<K, V> {
 	 * Generic Hash node class, acts like a linked list node
 	 */
 
-	static class Hashnode<K, V> {
+	class Hashnode<K, V> {
 		final K key;
 		V data;
 		Hashnode<K, V> next;
@@ -37,8 +37,7 @@ public class HashTable<K, V> {
 	public V insert(K key, V data) {
 		int hash = getIndex(key);
 
-		// Lets check if same key already exists and if so lets update it with
-		// the new value
+		// Lets check if same key already exists and if so lets update it with the new value
 		for (Hashnode<K, V> node = nodes[hash]; node != null; node = node.next) {
 			if ((hash == node.hash) && key.equals(node.key)) {
 				V oldData = node.data;

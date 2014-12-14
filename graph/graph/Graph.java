@@ -10,7 +10,7 @@ public class Graph {
 	private int nVerts; // current number of vertices
 	private Queue theQueue;
 	private Stack<Integer> theStack;
-	
+
 	public Graph() {
 
 		vertexList = new Vertex[MAX_VERTS];
@@ -40,7 +40,8 @@ public class Graph {
 	}
 
 	public void bfs() {
-		// BFS involves searching a node and it's siblings before going to any children.
+		// BFS involves searching a node and it's siblings before going to any
+		// children.
 		// begin at vertex 0
 		vertexList[0].wasVisited = true;
 		displayVertex(0);
@@ -65,8 +66,8 @@ public class Graph {
 	}
 
 	public void dfs() {
-		// DFS involves searching a node and all it's children before proceeding 
-		//to its siblings.
+		// DFS involves searching a node and all it's children before proceeding
+		// to its siblings.
 		// begin at vertex 0
 		vertexList[0].wasVisited = true; // mark it
 		displayVertex(0); // display it
@@ -130,7 +131,6 @@ public class Graph {
 		return -1;
 	}
 
-	
 	public static void main(String[] args) {
 		Graph theGraph = new Graph();
 		theGraph.addVertex('A'); // 0
@@ -155,6 +155,6 @@ public class Graph {
 		System.out.print("Minimum spanning tree: ");
 		theGraph.mst(); // minimum spanning tree
 		System.out.println();
-		
+
 	}
 }

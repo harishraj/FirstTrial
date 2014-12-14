@@ -14,7 +14,7 @@ public class DepthFirstSearch {
 		Stack<GNode> s = new Stack<GNode>();
 		// in stack - we drill down the edge first - finish the legs before
 		// picking the siblings
-		// in BFS - we use  Queue (linkedlist internally). Queue uses less
+		// in BFS - we use Queue (linkedlist internally). Queue uses less
 		// memory as compared to a stack - because in stack - every level of
 		// recursion adds a new layer to the memory.
 

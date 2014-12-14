@@ -1,7 +1,7 @@
 package path;
 
 class Graph {
-	
+
 	private final int MAX_VERTS = 20;
 	private final int INFINITY = 1000000;
 	private Vertex vertexList[]; // list of vertices
@@ -19,7 +19,7 @@ class Graph {
 		adjMat = new int[MAX_VERTS][MAX_VERTS];
 		nVerts = 0;
 		nTree = 0;
-		
+
 		for (int j = 0; j < MAX_VERTS; j++)
 			// set adjacency
 			for (int k = 0; k < MAX_VERTS; k++)
@@ -28,7 +28,7 @@ class Graph {
 
 		sPath = new DistPar[MAX_VERTS]; // shortest paths
 	}
-	
+
 	public void addVertex(char lab) {
 		vertexList[nVerts++] = new Vertex(lab);
 	}
@@ -38,7 +38,6 @@ class Graph {
 	}
 
 	public void path() {
-
 		int startTree = 0; // start at vertex 0
 		vertexList[startTree].isInTree = true;
 		nTree = 1; // put it in tree
@@ -76,7 +75,7 @@ class Graph {
 		for (int j = 0; j < nVerts; j++)
 			vertexList[j].isInTree = false;
 	}
-	
+
 	public int getMin() {
 		// get entry from sPath with minimum distance
 		int minDist = INFINITY; // assume minimum
@@ -90,8 +89,8 @@ class Graph {
 			}
 		} // end for
 		return indexMin; // return index of minimum
-	} 
-	
+	}
+
 	public void adjust_sPath() {
 		// adjust values in shortest-path array sPath
 		int column = 1; // skip starting vertex
@@ -119,7 +118,7 @@ class Graph {
 			column++;
 		} // end while(column < nVerts)
 	}
-	
+
 	public void displayPaths() {
 		for (int j = 0; j < nVerts; j++) {
 			// display contents of sPath[]

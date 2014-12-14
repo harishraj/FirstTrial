@@ -47,7 +47,8 @@ public class SeparateChainingHashTable<Key, Value> {
 
     // hash value between 0 and M-1
     private int hash(Key key) {
-        return (key.hashCode() & 0x7fffffff) % M;
+        //return (key.hashCode() & 0x7fffffff) % M;
+        return (key.hashCode() & Integer.MAX_VALUE) % M;
     } 
 
     // return number of key-value pairs in symbol table

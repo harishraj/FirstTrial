@@ -8,6 +8,7 @@ public class ArraysSum {
 		int j=0;
 		int[] result = new int[20];
         HashSet<Integer> hashSet = new HashSet<>();
+        //Collections.addAll(hashSet, array);
         for (int k : array) {
         	hashSet.add(k);
         }
